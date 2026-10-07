@@ -37,29 +37,24 @@
     .page {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 12px 8px 24px;
+      padding: 24px 16px 48px;
     }
 
     /* Header / Hero */
+
     .hero {
       display: grid;
-      grid-template-columns: 2fr 1.4fr; /* text larger, payment card smaller */
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
       gap: 32px;
       align-items: flex-start;
       margin-bottom: 40px;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
-        grid-template-areas:
-      "text"
-      "card";
       }
     }
-    .hero-text {
-  grid-area: text;
-}
 
     .hero-text h1 {
       font-size: 2.2rem;
@@ -93,14 +88,14 @@
       margin-top: 8px;
     }
     .hero img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
 
-.hero-image {
-  max-width: 500px; /* adjust this number until it fits perfectly */
-}
+    .hero-image {
+      max-width: 500px; /* adjust this number until it fits perfectly */
+      }
 
     /* Pricing / Form Card */
 
@@ -110,7 +105,6 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
       padding: 20px 20px 24px;
       border: 1px solid var(--border);
-        grid-area: card;
     }
 
     .product-card-header {
@@ -329,7 +323,6 @@
   <div class="page">
     <!-- Hero / Intro + Product Card -->
     <section class="hero">
-      
       <div class="hero-text">
         <span class="badge"> Next-Gen's Carbon Offset Plan (Monthly Subscription)</span>
         <h1>Ethical Business Offset Subscription</h1>
@@ -340,11 +333,12 @@
           Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect
           ecosystems, and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
         </p>
+        <div class="hero-image">
+          <img src="your-image.png" alt="12345">
+        </div>
       </div>
-      <div class="hero-image">
-  <img src="forestphoto.jpg" alt="">
-          </div>
-           <aside class="product-card">
+
+      <aside class="product-card">
         <div class="product-card-header">
           <h2>Monthly Subscription</h2>
           <div class="price-row">
@@ -391,8 +385,6 @@
           </div>
         </div>
       </aside>
-
-     
     </section>
 
     <!-- Projects Section -->
