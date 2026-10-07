@@ -98,7 +98,27 @@
       gap: 32px;
       align-items: flex-start;
       margin-bottom: 40px;
+      background-image: url("forestphoto.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: inherit;
+      background-position: inherit;
+      background-repeat: inherit;
+      opacity: 0.35;
+      z-index: 0;
+    }
+    .hero > * {
+      position: relative;
+      z-index: 1;
+    }
+    
 
     @media (max-width: 900px) {
       .hero {
