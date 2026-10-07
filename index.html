@@ -49,7 +49,7 @@
       margin-bottom: 40px;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       .hero {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -92,6 +92,15 @@
       color: var(--muted);
       margin-top: 8px;
     }
+    .hero img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  max-width: 500px; /* adjust this number until it fits perfectly */
+}
 
     /* Pricing / Form Card */
 
@@ -331,8 +340,10 @@
           Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect
           ecosystems, and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
         </p>
-        <img src="forestphoto.jpg" alt="Forest background" style="width:600px;height:300px >
       </div>
+      <div class="hero-image">
+  <img src="forestphoto.jpg" alt="">
+          </div>
            <aside class="product-card">
         <div class="product-card-header">
           <h2>Monthly Subscription</h2>
