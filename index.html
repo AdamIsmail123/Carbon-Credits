@@ -98,11 +98,13 @@
 
     /* INTRO IMAGE */
     .intro-image {
-      width: 140px;
+      width: 240px;        /* bigger but still safe */
+      max-width: 100%;     /* prevents overflow on mobile */
       display: block;
-      margin: 20px auto 0;
-      border-radius: 8px;
+      margin: 24px auto 0; /* centered, with a bit more breathing room */
+      border-radius: 10px; /* optional: looks nicer */
     }
+
 
     /* PRODUCT CARD */
     .product-card {
