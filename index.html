@@ -1,361 +1,451 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Next-Gen Credits</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Next-Gen Credits Business Plan Subscription</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #1f6f5f;
+      --primary-dark: #155043;
+      --accent: #f4b41a;
+      --bg: #f5f7fa;
+      --text: #222;
+      --muted: #666;
+      --border: #e0e4ea;
+      --white: #ffffff;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1></h1>Sovereign Terra Exchanges</h1>
-								<p> Innovative carbon credit solutions for ethical businesses. </p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Discover</a></li>
-								<li><a href="#work">Enable</a></li>
-								<li><a href="#about">Differentiate</a></li>
-								<li><a href="#contact">Discuss</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-				<!-- Main -->
-					<div id="main">
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Discover</h2>
-								<span class="image main"><img src="images/Forestbackground.jpg" alt="" /></span>
-								<p>Our platform is redefining the carbon‑credit ecosystem by merging high‑growth climate innovation with next‑generation market infrastructure. Built for founders, investors, and forward‑leaning enterprises, it transforms environmental responsibility into a strategic value‑creation lever. Through proprietary verification frameworks and streamlined acquisition pathways, we deliver premium, future‑proof credits engineered for scalability, transparency, and long‑term impact. By aligning sustainability with performance, we empower stakeholders to accelerate their climate commitments while unlocking new operational efficiencies and brand differentiation. This is carbon action optimized—ethical, data‑driven, and designed for leaders building the next era of resilient global markets. <a href="#work">impact</a>.</p>
-								<p>.</p>
-							</article>
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Enable</h2>
-								<span class="image main"><img src="images/Forestbackground.jpg" alt="" /></span>
-								<p>Purchasing carbon credits through our platform is simple, secure, and fully transparent. We support direct bank transfers. Every transaction is accompanied by a detailed receipt outlining the exact project your payment supports. There are no hidden fees or unclear charges—just ethical, accountable climate action. Once your payment is processed, you immediately receive confirmation and documentation showing the impact you’ve funded, ensuring complete clarity and trust at every step.</p>
-								<p>We support credits everyday</p>
-							</article>
+    /* Header / Hero */
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Differentiate</h2>
-								<span class="image main"><img src="images/Forestbackground.jpg" alt="" /></span>
-								<p>Strategic land stewardship is emerging as a high‑value asset class for visionary investors seeking long‑term resilience and competitive differentiation. By supporting initiatives that secure territorial stability and safeguard critical ecosystems, stakeholders gain exposure to a uniquely durable form of value creation. These efforts mitigate operational risk, strengthen supply‑chain continuity, and unlock premium sustainability credentials that elevate brand equity in global markets. Positioned at the intersection of environmental intelligence and frontier‑market opportunity, land‑focused investments offer a powerful blend of impact, protection, and strategic upside—ideal for leaders building portfolios designed to thrive amid accelerating climate and economic volatility.</p>
-							</article>
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+    .hero-text h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+    .hero-text .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    .hero-text .badge {
+      display: inline-block;
+      background: rgba(31, 111, 95, 0.08);
+      color: var(--primary-dark);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 16px;
+    }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    .hero-text p {
+      margin-bottom: 12px;
+    }
 
-								<section>
-									<h3 class="major">Lists</h3>
+    .hero-text small {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    /* Pricing / Form Card */
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    .product-card {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      padding: 20px 20px 24px;
+      border: 1px solid var(--border);
+    }
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+    .product-card-header {
+      margin-bottom: 16px;
+    }
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+    .product-card-header h2 {
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+    .product-card-header .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 6px;
+    }
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+    .product-card-header .price {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+    .product-card-header .per {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+    .product-card-header .note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
 
-							</article>
+    .product-card-section-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 16px 0 8px;
+    }
 
-					</div>
+    .select-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p  /p>
-					</footer>
+    .select-row select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      background: #fafbff;
+    }
 
-			</div>
+    .form-group {
+      margin-bottom: 10px;
+    }
 
-		<!-- Forestbackground.jpg -->
-			<div id="Forestbackground.jpg"></div>
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .form-group input {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      background: #fafbff;
+    }
 
-	</body>
+    .inline-info {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 14px;
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: none;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .cta-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .small-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    /* Projects Section */
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .section p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .project-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--primary-dark);
+    }
+
+    .project-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .project-link {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .projects-footer {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+
+    .projects-footer a {
+      font-weight: 600;
+    }
+
+    /* FAQ */
+
+    .faq {
+      margin-top: 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    .faq h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .faq-item {
+      margin-bottom: 16px;
+    }
+
+    .faq-item h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .faq-item p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* Footer note */
+
+    .footer-note {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Hero / Intro + Product Card -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge"> Next-Gen's Carbon Offset Plan (Monthly Subscription)</span>
+        <h1>Carbon Offset Plan Subscription</h1>
+        <p class="subtitle">
+          Offset a standardized amount of your business’s carbon footprint each month.
+        </p>
+            <p>
+          Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect
+          ecosystems, and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
+        </p>
+      </div>
+
+      <aside class="product-card">
+        <div class="product-card-header">
+          <h2>Monthly Subscription</h2>
+          <div class="price-row">
+            <span class="price">$8.50</span>
+            <span class="per">per employee / month</span>
+          </div>
+          <p class="note">Quantity per employee per month: 0.5 mT CO₂e</p>
+        </div>
+
+        <div>
+          <div class="product-card-section-title">Currency</div>
+          <div class="select-row">
+            <select>
+              <option>United States dollar ($) - USD</option>
+              <option>Australian dollar ($) - AUD</option>
+              <option>Canadian dollar ($) - CAD</option>
+              <option>Hong Kong dollar ($) - HKD</option>
+              <option>Indonesian rupiah (Rp) - IDR</option>
+              <option>New Zealand dollar ($) - NZD</option>
+              <option>Pound sterling (£) - GBP</option>
+              <option>Singapore dollar ($) - SGD</option>
+              <option>Japanese yen (¥) - JPY</option>
+            </select>
+          </div>
+
+          <div class="product-card-section-title">Business details</div>
+
+          <div class="form-group">
+            <label for="business-name">Business name (optional)</label>
+            <input id="business-name" type="text" placeholder="Your business name" />
+          </div>
+
+          <div class="form-group">
+            <label for="employees"># of employees</label>
+            <input id="employees" type="number" min="1" placeholder="e.g. 25" />
+            <div class="inline-info">
+              Total monthly offset = employees × 0.5 mT CO₂e
+            </div>
+          </div>
+
+          <button class="cta-btn">Sign Up Now</button>
+          <div class="small-meta">
+            Payment will be made automatically each month. You can adjust employee count or cancel anytime.
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section">
+      <h2>Your purchase supports these projects</h2>
+      <p>
+        Online customers support numerous projects including stewardship innovation, regenerative asset management, territorial venture building, ecological value capture, sustainable territory operations, impact-driven land portfolio strategy and biodiversity capitalization.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-tag">Ecological Value Capture</div>
+          <div class="project-title">KM 134 Climate Initative</div>
+          <p class="project-desc">
+            Dedicated to preserving a significant portion of the Atikamekw Nehirowisiw Forest. 
+          </p>
+        
+          <a href="https://www.gofundme.com/f/soutenez-le-camp-souverainete-defense-de-la-foret-a-km-134" class="project-link"><br>Donate Now →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Stewardship Innovation</div>
+          <div class="project-title">Canis Carbon Storage Sanctuary</div>
+          <p class="project-desc">
+           A dog sanctuary that pays dividends to the planet, turning conservation into climate performance.
+          </p>
+          <a href="https://laxyip.com/wilp-aasosxw" class="project-link">Donate Now →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-tag">Sustainable Territory Operations</div>
+          <div class="project-title">Wet'suwet'en Asset Management</div>
+          <p class="project-desc">
+            Mitigates greenhouse gas emissions by supporting land defense asset management.
+          </p>
+          <a href="https://amnesty.ca/wetsuweten-land-defenders/" class="project-link">Donate Now →</a>
+        </article>
+      </div>
+
+      <div class="projects-footer">
+        <span>Includes carbon reduction (avoidance) credits from socially-engineered solutions.</span>
+        <a href="#">View all projects →</a>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How do carbon offsets work?</h3>
+        <p>
+          Carbon offsets neutralize your footprint by funding projects like which remove or prevent greenhouse gas emissions. Each credit represents an unverified reduction or removal
+          of emissions equivalent to a specific amount of CO₂e.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What are the benefits of buying carbon offsets?</h3>
+        <p>
+          Offsets allow your business to portray accountability for unavoidable emissions without working on conservation and efficiency. They align with customer values, and limit engagement in
+          climate action.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do you ensure projects really make a difference?</h3>
+        <p>
+          Projects are independently verified under recognized standards and must pass “additionality” tests,
+          meaning your purchase is critical to making the reductions happen beyond business-as-usual scenarios.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
