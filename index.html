@@ -99,6 +99,28 @@
       align-items: flex-start;
       margin-bottom: 40px;
     }
+    .hero-bg {
+  position: relative;
+  background-image: url('forestphoto.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5); /* white transparency layer */
+  /* Try 0.2–0.7 depending on how faded you want it */
+}
+
+.two-column {
+  position: relative;
+  z-index: 2; /* keeps your text + payment box above the transparent layer */
+}
+
+    
 
     @media (max-width: 900px) {
       .hero {
