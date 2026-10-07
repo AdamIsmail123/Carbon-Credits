@@ -105,6 +105,28 @@
         grid-template-columns: 1fr;
       }
     }
+      .two-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    margin-top: 40px;
+  }
+  
+  .left-column {
+    flex: 2; /* bigger column */
+  }
+  
+  .right-column {
+    flex: 1.4; /* smaller column */
+  }
+  
+  @media (max-width: 900px) {
+    .two-column {
+      flex-direction: column;
+    }
+  }
+
 
     .hero-text h1 {
       font-size: 2.2rem;
@@ -388,7 +410,8 @@
 
   </div>
 </header>
-
+<div class="two-column">
+  <div class="left-column">
   <div class="page">
     <!-- Hero / Intro + Product Card -->
     <section class="hero">
@@ -406,6 +429,8 @@ Next-Gen sells credits directly from tree planters to businesses so you are purc
           Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect
           ecosystems, and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
         </p>
+       </div>  
+     <div class="right-column">
 
       <aside class="product-card">
         <div class="product-card-header">
@@ -454,6 +479,8 @@ Next-Gen sells credits directly from tree planters to businesses so you are purc
           </div>
         </div>
       </aside>
+         </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
