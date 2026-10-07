@@ -37,95 +37,50 @@
     .page {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 24px 16px 48px;
+      padding: 16px 16px 32px; /* tightened spacing */
     }
 
-    /* Header / Hero */
+    /* Header */
     .page-header {
-  background: #f5f7fa;
-  padding: 24px 0 32px;
-  border-bottom: 1px solid #e0e4ea;
-}
+      background: #f5f7fa;
+      padding: 12px 0 18px; /* reduced gap */
+      border-bottom: 1px solid #e0e4ea;
+    }
 
-.page-header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+    .page-header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
 
-.breadcrumbs {
-  font-size: 0.85rem;
-  color: #666;
-  margin-bottom: 12px;
-}
+    .breadcrumbs {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 8px;
+    }
 
-.breadcrumbs a {
-  color: #1f6f5f;
-  font-weight: 500;
-}
+    .breadcrumbs a {
+      color: #1f6f5f;
+      font-weight: 500;
+    }
 
-.breadcrumbs span {
-  margin: 0 6px;
-  color: #999;
-}
-
-.header-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 16px;
-}
-
-.header-badges {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.badge-item {
-  background: rgba(31, 111, 95, 0.08);
-  color: #155043;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-
+    /* HERO GRID */
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
       gap: 32px;
       align-items: flex-start;
+      margin-top: 20px;
       margin-bottom: 40px;
     }
+
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
       }
     }
-      .two-column {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
-    margin-top: 40px;
-  }
-  
-  .left-column {
-    flex: 2; /* bigger column */
-  }
-  
-  .right-column {
-    flex: 1.4; /* smaller column */
-  }
-  
-  @media (max-width: 900px) {
-    .two-column {
-      flex-direction: column;
-    }
-  }
-    }
+
+    /* HERO TEXT */
     .hero-text h1 {
       font-size: 2.2rem;
       margin-bottom: 12px;
@@ -137,36 +92,19 @@
       margin-bottom: 16px;
     }
 
-    .hero-text .badge {
-      display: inline-block;
-      background: rgba(31, 111, 95, 0.08);
-      color: var(--primary-dark);
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      margin-bottom: 16px;
-    }
-
     .hero-text p {
       margin-bottom: 12px;
     }
 
-    .hero-text small {
-      display: block;
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 8px;
-    }
-
-    css
+    /* INTRO IMAGE */
     .intro-image {
-      width: 120px;
-      margin-top: 20px;
+      width: 140px;
       display: block;
       margin: 20px auto 0;
+      border-radius: 8px;
     }
-    /* Pricing / Form Card */
 
+    /* PRODUCT CARD */
     .product-card {
       background: var(--white);
       border-radius: 12px;
@@ -184,25 +122,25 @@
       margin-bottom: 4px;
     }
 
-    .product-card-header .price-row {
+    .price-row {
       display: flex;
       align-items: baseline;
       gap: 8px;
       margin-top: 6px;
     }
 
-    .product-card-header .price {
+    .price {
       font-size: 1.8rem;
       font-weight: 600;
       color: var(--primary-dark);
     }
 
-    .product-card-header .per {
+    .per {
       font-size: 0.9rem;
       color: var(--muted);
     }
 
-    .product-card-header .note {
+    .note {
       font-size: 0.8rem;
       color: var(--muted);
       margin-top: 4px;
@@ -214,19 +152,14 @@
       margin: 16px 0 8px;
     }
 
-    .select-row {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-
-    .select-row select {
+    select {
       width: 100%;
       padding: 8px 10px;
       border-radius: 6px;
       border: 1px solid var(--border);
       font-size: 0.9rem;
       background: #fafbff;
+      margin-bottom: 12px;
     }
 
     .form-group {
@@ -282,8 +215,7 @@
       text-align: center;
     }
 
-    /* Projects Section */
-
+    /* PROJECTS */
     .section {
       margin-top: 40px;
     }
@@ -313,11 +245,12 @@
       flex-direction: column;
       gap: 8px;
     }
+
     .project-image {
       width: 100%;
-      height: 160px;          /* consistent height */
-      object-fit: cover;      /* crops nicely without distortion */
-      border-radius: 8px;     /* matches your card style */
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
       margin-bottom: 12px;
     }
 
@@ -354,12 +287,7 @@
       font-size: 0.85rem;
     }
 
-    .projects-footer a {
-      font-weight: 600;
-    }
-
     /* FAQ */
-
     .faq {
       margin-top: 40px;
       border-top: 1px solid var(--border);
@@ -384,177 +312,158 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
-
-    /* Footer note */
-
-    .footer-note {
-      margin-top: 32px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
   </style>
 </head>
-<body>
-  <header class="page-header">
-  <div class="page-header-inner">
 
-    <!-- Breadcrumbs -->
+<body>
+<header class="page-header">
+  <div class="page-header-inner">
     <nav class="breadcrumbs">
-      <a href="#">Home</a>
-      <span>›</span>
-      <a href="#">Carbon Plans</a>
-      <span>›</span>
-      <span class="current">Next-Gen's Carbon Offset Subscription</span>
+      <a href="#">Home</a> › <a href="#">Carbon Plans</a> › <span class="current">Next-Gen's Carbon Offset Subscription</span>
     </nav>
   </div>
 </header>
-<div class="two-column">
-  <div class="left-column">
-  <div class="page">
-    <!-- Hero / Intro + Product Card -->
-    <section class="hero">
-      <div class="hero-text">
-        
-        <h1>Next-Gen's Carbon Offset Subscription</h1>
-        <p class="subtitle">
-          Offset a standardized amount of your business’s carbon footprint each month.
-        </p>
-            <p>
-              <p>
-             <b> Most carbon credits are abstract propositions divorced from the Real, On the Ground Planting and Growing of Trees. <br><br> Not Next-Gen! 
 
-Next-Gen sells credits directly from tree planters to businesses so you are purchasing credits from the hands that put the trees in the ground! This direct connection makes your impact tangible and will impress your clients so you can keep producing emissions guilt-free.</b><br><br>
-          Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect
-          ecosystems, and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
-        </p>
-       </div>  
-     <div class="right-column">
+<div class="page">
 
-      <aside class="product-card">
-        <div class="product-card-header">
-          <h2>Monthly Subscription</h2>
-          <div class="price-row">
-            <span class="price">$8.50</span>
-            <span class="per">per employee / month</span>
-          </div>
-          <p class="note">Quantity per employee per month: 0.5 mT CO₂e</p>
-        </div>
+  <section class="hero">
 
-        <div>
-          <div class="product-card-section-title">Currency</div>
-          <div class="select-row">
-            <select>
-              <option>United States dollar ($) - USD</option>
-              <option>Australian dollar ($) - AUD</option>
-              <option>Canadian dollar ($) - CAD</option>
-              <option>Hong Kong dollar ($) - HKD</option>
-              <option>Indonesian rupiah (Rp) - IDR</option>
-              <option>New Zealand dollar ($) - NZD</option>
-              <option>Pound sterling (£) - GBP</option>
-              <option>Singapore dollar ($) - SGD</option>
-              <option>Japanese yen (¥) - JPY</option>
-            </select>
-          </div>
+    <!-- LEFT SIDE -->
+    <div class="hero-text">
+      <h1>Next-Gen's Carbon Offset Subscription</h1>
 
-          <div class="product-card-section-title">Business details</div>
+      <p class="subtitle">Offset a standardized amount of your business’s carbon footprint each month.</p>
 
-          <div class="form-group">
-            <label for="business-name">Business name (optional)</label>
-            <input id="business-name" type="text" placeholder="Your business name" />
-          </div>
+      <p><b>Most carbon credits are abstract propositions divorced from the Real, On the Ground Planting and Growing of Trees.<br><br>
+      Not Next-Gen! Next-Gen sells credits directly from tree planters to businesses so you are purchasing credits from the hands that put the trees in the ground! This direct connection makes your impact tangible and will impress your clients so you can keep producing emissions guilt-free.</b></p>
 
-          <div class="form-group">
-            <label for="employees"># of employees</label>
-            <input id="employees" type="number" min="1" placeholder="e.g. 25" />
-            <div class="inline-info">
-              Total monthly offset = employees × 0.5 mT CO₂e
-            </div>
-          </div>
-
-          <button class="cta-btn">Sign Up Now</button>
-          <div class="small-meta">
-            Payment will be made automatically each month. You can adjust employee count or cancel anytime.
-          </div>
-        </div>
-      </aside>
-         </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section">
-      <h2>Your purchase supports these projects</h2>
       <p>
-        Online customers support numerous projects including stewardship innovation, regenerative asset management, territorial venture building, ecological value capture, sustainable territory operations, impact-driven land portfolio strategy and biodiversity capitalization.
+        Credits come from a Canadian portfolio of projects that restore natural climate resilience, protect ecosystems,
+        and reduce climate super-pollutants. You can adjust your employee count or cancel anytime.
       </p>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <img src="soveriegnty.jpg" alt="" class="project-image">
-          <div class="project-tag">Ecological Value Capture</div>
-          <div class="project-title">KM 134 Climate Initative</div>
-          <p class="project-desc">
-            Dedicated to preserving a significant portion of the Atikamekw Nehirowisiw Forest. 
-          </p>
-        
-          <a href="https://www.gofundme.com/f/soutenez-le-camp-souverainete-defense-de-la-foret-a-km-134" class="project-link">Donate Now →</a>
-        </article>
+      <!-- ⭐ MISTY EVERGREEN FOREST IMAGE ⭐ -->
+      <img src="forestphoto.jpg" class="intro-image" alt="Forest">
+    </div>
 
-        <article class="project-card">
-          <img src="dog.jpg" alt="" class="project-image">
-          <div class="project-tag">Stewardship Innovation</div>
-          <div class="project-title">PRGT Carbon and Canis Storage Facility</div>
-          <p class="project-desc">
-           A dog sanctuary that pays dividends to the planet, turning conservation into climate performance.
-          </p>
-          <a href="https://laxyip.com/wilp-aasosxw" class="project-link">Donate Now →</a>
-        </article>
-
-        <article class="project-card">
-          <img src="land.jpg" alt="" class="project-image">
-          <div class="project-tag">Sustainable Territory Operations</div>
-          <div class="project-title">Wet'suwet'en Asset Management</div>
-          <p class="project-desc">
-            Mitigates greenhouse gas emissions by supporting land resilience asset management.
-          </p>
-          <a href="https://amnesty.ca/wetsuweten-land-defenders/" class="project-link">Donate Now →</a>
-        </article>
+    <!-- RIGHT SIDE -->
+    <aside class="product-card">
+      <div class="product-card-header">
+        <h2>Monthly Subscription</h2>
+        <div class="price-row">
+          <span class="price">$8.50</span>
+          <span class="per">per employee / month</span>
+        </div>
+        <p class="note">Quantity per employee per month: 0.5 mT CO₂e</p>
       </div>
 
-      <div class="projects-footer">
-        <span>Includes carbon reduction (avoidance) credits from socially-engineered solutions.</span>
-        <a href="#">View all projects →</a>
+      <div>
+        <div class="product-card-section-title">Currency</div>
+        <select>
+          <option>United States dollar ($) - USD</option>
+          <option>Canadian dollar ($) - CAD</option>
+        </select>
+
+        <div class="product-card-section-title">Business details</div>
+
+        <div class="form-group">
+          <label for="business-name">Business name (optional)</label>
+          <input id="business-name" type="text" placeholder="Your business name" />
+        </div>
+
+        <div class="form-group">
+          <label for="employees"># of employees</label>
+          <input id="employees" type="number" min="1" placeholder="e.g. 25" />
+          <div class="inline-info">
+            Total monthly offset = employees × 0.5 mT CO₂e
+          </div>
+        </div>
+
+        <button class="cta-btn">Sign Up Now</button>
+        <div class="small-meta">
+          Payment will be made automatically each month. You can adjust employee count or cancel anytime.
+        </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-      <h2>Frequently Asked Questions</h2>
+  </section>
 
-      <div class="faq-item">
-        <h3>How do carbon offsets work?</h3>
-        <p>
-          Carbon offsets neutralize your footprint by funding projects which prevent greenhouse gas emissions. Each credit represents an unverified reduction or removal
-          of emissions equivalent to a specific amount of CO₂e.
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2>Your purchase supports these projects</h2>
+    <p>
+      Online customers support numerous projects including stewardship innovation, regenerative asset management,
+      territorial venture building, ecological value capture, sustainable territory operations, impact-driven land
+      portfolio strategy and biodiversity capitalization.
+    </p>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="soveriegnty.jpg" alt="" class="project-image">
+        <div class="project-tag">Ecological Value Capture</div>
+        <div class="project-title">KM 134 Climate Initative</div>
+        <p class="project-desc">
+          Dedicated to preserving a significant portion of the Atikamekw Nehirowisiw Forest.
         </p>
-      </div>
+        <a href="https://www.gofundme.com/f/soutenez-le-camp-souverainete-defense-de-la-foret-a-km-134" class="project-link">Donate Now →</a>
+      </article>
 
-      <div class="faq-item">
-        <h3>What are the benefits of buying carbon offsets?</h3>
-        <p>
-          Offsets allow your business to portray accountability for unavoidable emissions without working on conservation and efficiency. They align with customer values, and limit engagement in
-          climate action.
+      <article class="project-card">
+        <img src="dog.jpg" alt="" class="project-image">
+        <div class="project-tag">Stewardship Innovation</div>
+        <div class="project-title">PRGT Carbon and Canis Storage Facility</div>
+        <p class="project-desc">
+          A dog sanctuary that pays dividends to the planet, turning conservation into climate performance.
         </p>
-      </div>
+        <a href="https://laxyip.com/wilp-aasosxw" class="project-link">Donate Now →</a>
+      </article>
 
-      <div class="faq-item">
-        <h3>How do you ensure projects really make a difference?</h3>
-        <p>
-          Projects are independently verified under recognized standards and must pass “additionality” tests,
-          meaning your purchase is critical to making the reductions happen beyond business-as-usual scenarios.
+      <article class="project-card">
+        <img src="land.jpg" alt="" class="project-image">
+        <div class="project-tag">Sustainable Territory Operations</div>
+        <div class="project-title">Wet'suwet'en Asset Management</div>
+        <p class="project-desc">
+          Mitigates greenhouse gas emissions by supporting land resilience asset management.
         </p>
-      </div>
-    </section>
-  </div>
+        <a href="https://amnesty.ca/wetsuweten-land-defenders/" class="project-link">Donate Now →</a>
+      </article>
+    </div>
+
+    <div class="projects-footer">
+      <span>Includes carbon reduction (avoidance) credits from socially-engineered solutions.</span>
+      <a href="#">View all projects →</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>How do carbon offsets work?</h3>
+      <p>
+        Carbon offsets neutralize your footprint by funding projects which prevent greenhouse gas emissions. Each credit
+        represents an unverified reduction or removal of emissions equivalent to a specific amount of CO₂e.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What are the benefits of buying carbon offsets?</h3>
+      <p>
+        Offsets allow your business to portray accountability for unavoidable emissions without working on conservation
+        and efficiency. They align with customer values, and limit engagement in climate action.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do you ensure projects really make a difference?</h3>
+      <p>
+        Projects are independently verified under recognized standards and must pass “additionality” tests, meaning your
+        purchase is critical to making the reductions happen beyond business-as-usual scenarios.
+      </p>
+    </div>
+  </section>
+
+</div>
 </body>
 </html>
